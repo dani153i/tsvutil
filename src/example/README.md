@@ -14,6 +14,7 @@ i.e. a utility for handling tsv files as dataset.
 
 ```java
 String dataPath = "data";
+// createTable(dataPath, tableName, columns);
 TsvFile dataset_school = TsvFile.createTable(dataPath, "school.basics",
 	new String[] { "CVR", "EAN", "Name", "AKA", "Address", "ZipCode" });
 ```
