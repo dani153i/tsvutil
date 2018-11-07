@@ -71,10 +71,10 @@ System.out.println("\nUpdate school name with primary key '"+ school_kea[0] +"':
 <h3>Delete Row</h3>
 
 ```java
-String[] schl_bscs_rws = dataset_school.listRows();				// fetch rows
+String[] schl_bscs_rws = dataset_school.listRows();		// fetch rows
 // primary key = first field of 3rd row
 String primaryKey = TsvFile.processRow(schl_bscs_rws[2])[0];	// translates row to fields. i.e. String to arrray of String.
-dataset_school.removeRow(primaryKey);							// remove row from dataset
+dataset_school.removeRow(primaryKey);				// remove row from dataset
 
 System.out.println("\nDeleted schools with primary key '"+ primaryKey +"': ");
 ```
@@ -86,7 +86,7 @@ System.out.println("\nDeleted schools with primary key '"+ primaryKey +"': ");
 String[] schl_bscs_rws = null;
 // search criteria cannot exceed table column count. i.e. school.basics.columns = 6
 String[] searchCriterion1 = new String[] { null, null, null, "KEA", null, "2200" };	// 6 criteria is fine, since 6 <= 6
-String[] searchCriterion2 = new String[] { null, null, null, "KEA", null };			// 5 criteria is fine, since 5 <= 6
+String[] searchCriterion2 = new String[] { null, null, null, "KEA", null };		// 5 criteria is fine, since 5 <= 6
 
 schl_bscs_rws = dataset_school.findRows(searchCriterion1);		// get school.basics rows from 1st criterion
 System.out.println("\nFind schools aka 'KEA' located in zip '2200': ");
