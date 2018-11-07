@@ -91,11 +91,11 @@ String[] schl_bscs_rws = null;
 String[] searchCriterion1 = new String[] { null, null, null, "KEA", null, "2200" };	// 6 criteria is fine, since 6 <= 6
 String[] searchCriterion2 = new String[] { null, null, null, "KEA", null };		// 5 criteria is fine, since 5 <= 6
 
-schl_bscs_rws = dataset_school.findRows(searchCriterion1);		// get school.basics rows from 1st criterion
+schl_bscs_rws = dataset_school.findRows(searchCriterion1);		// get school.basics rows from criterion 1
 System.out.println("\nFind schools aka 'KEA' located in zip '2200': ");
 // "31656206", "5798000560291", "Københavns Erhvervsakademi", "KEA", "Guldbergsgade 29N", "2200"
 
-schl_bscs_rws = dataset_school.findRows(searchCriterion2);		// get school.basics rows from 2nd criterion
+schl_bscs_rws = dataset_school.findRows(searchCriterion2);		// get school.basics rows from criterion 2
 System.out.println("\nFind schools aka 'KEA': ");
 // "31656206", "5798000560291", "Københavns Erhvervsakademi", "KEA", "Guldbergsgade 29N", "2200"
 // "63372173", "5798000385844", "Karlslunde Erhvervsakademi", "KEA", "Skelvej 56", "2690"
