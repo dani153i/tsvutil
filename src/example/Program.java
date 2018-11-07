@@ -51,7 +51,7 @@ public class Program {
 		 */
 
 		String[] school_kea = TsvFile.processRow(schl_bscs_rws[0]);						// translate first row to fields
-		school_kea[2] = "<="+ school_kea[2] +"=>";													// change row's 3th field
+		school_kea[2] = "<="+ school_kea[2] +"=>";										// change row's 3th field
 		dataset_school.updateRow(school_kea);											// update row in db
 		schl_bscs_rws = dataset_school.listRows();										// get school basics rows
 
