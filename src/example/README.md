@@ -49,7 +49,7 @@ String schl_bscs_clmns = TsvFile.processRow(dataset_school.getColumns());
 String[] schl_bscs_rws = dataset_school.listRows();
 
 // print columns and rows
-System.out.println(columns);	// print columns
+System.out.println(columns);		// print columns
 for(String row : rows)			// foreach row in rows
 	System.out.println(row);	// print row
 ```
@@ -57,10 +57,10 @@ for(String row : rows)			// foreach row in rows
 <h3>Update Row</h3>
 
 ```java
-String[] schl_bscs_rws = dataset_school.listRows();				// // fetch rows
-String[] school_kea = TsvFile.processRow(schl_bscs_rws[0]);		// translate first row to fields. i.e. String to arrray of String
-school_kea[2] = "UPDATED VALUE";								// change row's 3th field
-dataset_school.updateRow(school_kea);							// update row in dataset
+String[] schl_bscs_rws = dataset_school.listRows();		// fetch rows
+String[] school_kea = TsvFile.processRow(schl_bscs_rws[0]);	// translate first row to fields. i.e. String to arrray of String
+school_kea[2] = "UPDATED VALUE";				// change row's 3th field
+dataset_school.updateRow(school_kea);				// update row in dataset
 
 System.out.println("\nUpdate school name with primary key '"+ school_kea[0] +"': ");
 
