@@ -1,4 +1,7 @@
 /**
+ * @author Daniel Blom & Azan Munir
+ * Copyright 2018
+ *
  * Utility for handling tsv files as dataset
  * Create Table (new dataset file) i.e. .tsv file
  * List and Count columns
