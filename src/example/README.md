@@ -5,12 +5,14 @@ i.e. a utility for handling tsv files as dataset.
 * List and Count columns
 * CRUD + Find row(s)
 
+<h3>Imports</h3>
 ```java
  import tsvutil;
 ```
 <h3>Create Table (dataset .tsv file)</h3>
 
 ```java
+String dataPath = "data";
 TsvFile dataset_school = TsvFile.createTable(dataPath, "school.basics",
 	new String[] { "CVR", "EAN", "Name", "AKA", "Address", "ZipCode" });
 ```
@@ -38,7 +40,7 @@ for(String[] school : schools)
 <h3>List Column Names</h3>
 
 ```java
-// get column names contatonated with tabstop (\t) as fencing. Ex. {"X1\tX2\t..Xn"}
+// get column names concatonated with tabstop (\t) as fencing. Ex. {"X1\tX2\t..Xn"}
 String schl_bscs_clmns = TsvFile.processRow(dataset_school.getColumns());
 ```
 
