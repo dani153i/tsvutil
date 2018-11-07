@@ -8,10 +8,24 @@ i.e. a utility for handling tsv files as dataset.
 
  package tsvutil;
 
+<h3>Constructor Summary</h3>
+<table>
+	<tr>
+		<td><b>Constructor and Description</b></td>
+	</tr>
+	<tr>
+		<td>
+			<b>TsvFile(String dataPath, String tableName)</b><br/>
+			Creates a TsvFile instance and reads {dataPath}/{tableName}/data.tsv.
+		</td>
+	</tr>
+</table>
+
+<h3>Method Summary</h3>
  <table>
 	<tr>
-		<td>Modifiers and Type</td>
-		<td>Method and Description</td>
+		<td><b>Modifiers and Type</b></td>
+		<td><b>Method and Description</b></td>
 	</tr>
 	<tr>
 		<td>String</td>
