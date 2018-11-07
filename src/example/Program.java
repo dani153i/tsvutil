@@ -4,7 +4,6 @@
  */
 
 import tsvutil.TsvFile;
-import java.io.File;
 
 /**
  * Program is an example of how to use TsvFile
