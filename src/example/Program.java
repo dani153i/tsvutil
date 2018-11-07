@@ -119,7 +119,7 @@ public class Program {
 			new String[] { "31656206", "5798000560291", "Københavns Erhvervsakademi", "KEA", "Guldbergsgade 29N", "2200" },
 			new String[] { "63372173", "5798000385844", "Karlslunde Erhvervsakademi", "KEA", "Skelvej 56", "2690" },
 			new String[] { "19596915", "5798000417687", "Copenhagen Business School", "CBS", "Solbjerg Plads 3", "2000" },
-			new String[] { "99999999", "9999999999999", "Skolen der slet ikke fandtes", "TstSkl", "Intetsted 0", "0000" }};
+			new String[] { "00000000", "0000000000000", "Skolen der slet ikke fandtes", "TstSkl", "Intetsted 0", "0000" }};
 		// save schools to db
 		for(String[] school : schools) dataset_school.createRow(school);
 	}
