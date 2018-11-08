@@ -7,9 +7,9 @@ i.e. a utility for handling tsv files as dataset.
 
 <h3>
 
-[TsvFile Documentation](https://github.com/dani153i/tsvutil/src/tsvutil/)
+[TsvFile Documentation](https://github.com/dani153i/tsvutil/tree/master/src/tsvutil/)
 </h3>
 <h3>
 
-[Example of usage](https://github.com/dani153i/tsvutil/src/example/)
+[Example of usage](https://github.com/dani153i/tsvutil/tree/master/src/example/)
 </h3>
