@@ -1,5 +1,5 @@
 /**
- * @author Daniel Blom
+ * @author Daniel Blom & Azan Munir
  * Copyright 2018
  */
 
