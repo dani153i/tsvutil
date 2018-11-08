@@ -71,7 +71,7 @@ TsvFile is a utility for handling tsv files as dataset.
 	<tr>
 		<td>boolean</td>
 		<td>
-			<b>createRow(String[] row)</b><br/>
+			<b>createRow(<i>String[] row</i>)</b><br/>
 			Tests whether the given <i>row</i> was written to dataset file.
 		</td>
 	</tr>
@@ -85,7 +85,7 @@ TsvFile is a utility for handling tsv files as dataset.
 	<tr>
 		<td>String[]</td>
 		<td>
-			<b>findRow(String[] criterion)</b><br/>
+			<b>findRow(<i>String[] criterion</i>)</b><br/>
 			Returns specific <u>row, as fields</u>, in dataset table from given <i>criterion</i>.
 		</td>
 	</tr>
