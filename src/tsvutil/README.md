@@ -62,6 +62,13 @@ TsvFile is a utility for handling tsv files as dataset.
 		</td>
 	</tr>
 	<tr>
+		<td>String[]</td>
+		<td>
+			<b>listRows(int from, int to)</b><br/>
+			Returns all rows within range [{from};{to}].
+		</td>
+	</tr>
+	<tr>
 		<td>boolean</td>
 		<td>
 			<b>createRow(String[] row)</b><br/>
