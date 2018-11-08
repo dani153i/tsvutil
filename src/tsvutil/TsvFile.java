@@ -120,6 +120,34 @@ public class TsvFile {
 		return out.toArray(new String[0]);								// return rows as array of string
 	}
 
+	// list range of rows
+	public String[] listRows(int from, int to)
+	{
+		String token = String.valueOf(System.nanoTime());				// token for unique dataset file name
+		File dataset = copyDataset(token);								// copy dataset to a new dataset with unique token
+		Scanner scanner = null;
+		int i = 1;
+
+		List<String> out = new ArrayList<String>(); 					// list to store found rows
+		try {
+			scanner = new Scanner(dataset);								// use new scanner instance as input stream
+			if(scanner.hasNextLine()) 									// skip first row. i.e. column headers
+				scanner.nextLine();										// 
+			while(i < to && scanner.hasNextLine()) {					// while row hasn't been found, dataset has more rows and loop is within range
+				if(i >= from)											// 
+					out.add(scanner.nextLine());						// add next line to output
+				i++;
+			}
+		} catch(Exception e) {
+			System.out.println(e.getMessage());
+		} finally {
+			scanner.close();											// close input stream
+			if(dataset.exists()) dataset.delete();						// remove temp dataset file from disk
+		}
+															
+		return out.toArray(new String[0]);								// return rows as array of string
+	}
+
 	// insert new row to dataset table
 	public boolean createRow(String[] row)
 	{
