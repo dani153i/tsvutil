@@ -65,7 +65,7 @@ TsvFile is a utility for handling tsv files as dataset.
 		<td>String[]</td>
 		<td>
 			<b>listRows(<i>int page</i>, <i>int results</i>)</b><br/>
-			Returns <u>all rows</u> within range [(<i>page</i> - 1) * <i>results</i> + 1 ; <i>page</i> * <i>results</i> ].
+			Returns <u>all rows</u> within range [(<i>page</i> - 1) * <i>results</i> + 1 ; <i>page</i> * <i>results</i>].
 		</td>
 	</tr>
 	<tr>
