@@ -93,7 +93,7 @@ TsvFile is a utility for handling tsv files as dataset.
 		<td>String[]</td>
 		<td>
 			<b>findRows(<i>String[] criterion</i>)</b><br/>
-			Returns specific <u>rows, as fields</u>, in dataset table from given <i>criterion</i>.
+			Returns specific <u>rows</u> in dataset table from given <i>criterion</i>.
 		</td>
 	</tr>
 	<tr>
