@@ -116,7 +116,7 @@ public class TsvFile {
 			scanner.close();											// close input stream
 			if(dataset.exists()) dataset.delete();						// remove temp dataset file from disk
 		}
-															
+
 		return out.toArray(new String[0]);								// return rows as array of string
 	}
 
@@ -146,7 +146,7 @@ public class TsvFile {
 			scanner.close();											// close input stream
 			if(dataset.exists()) dataset.delete();						// remove temp dataset file from disk
 		}
-															
+
 		return out.toArray(new String[0]);								// return rows as array of string
 	}
 
