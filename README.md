@@ -5,5 +5,5 @@ i.e. a utility for handling tsv files as dataset.
 * List and Count columns
 * CRUD + Find row(s)
 
-##[TsvFile Documentation](https://github.com/dani153i/tsvutil/src/tsvutil/)
-##[Example of usage](https://github.com/dani153i/tsvutil/src/example/)
+[##TsvFile Documentation](https://github.com/dani153i/tsvutil/src/tsvutil/)
+[##Example of usage](https://github.com/dani153i/tsvutil/src/example/)
